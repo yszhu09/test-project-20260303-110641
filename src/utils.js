@@ -7,7 +7,8 @@ function multiply(a, b) {
 }
 
 function capitalize(str) {
-  if (!str) return '';
+  // 修复：处理空字符串和 null/undefined
+  if (!str || str.length === 0) return '';
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 

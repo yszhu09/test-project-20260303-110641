@@ -22,5 +22,7 @@ describe('Test Project', () => {
     expect(capitalize('hello')).toBe('Hello');
     expect(capitalize('world')).toBe('World');
     expect(capitalize('')).toBe('');
+    expect(capitalize(null)).toBe('');
+    expect(capitalize(undefined)).toBe('');
   });
 });
